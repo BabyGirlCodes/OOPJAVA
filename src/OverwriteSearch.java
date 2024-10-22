@@ -9,6 +9,8 @@ public class OverwriteSearch {
         if(pos < 0 || pos > arr.length){
             throw new IndexOutOfBoundsException("position cannot be greater than array ");
         }
-         return 0;
+         int original = arr[pos];
+        arr[pos] = value;
+return original;
     }
 }
